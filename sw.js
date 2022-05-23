@@ -7,7 +7,7 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 
 // Recursos que estaran constantemente modificandose:
 const APP_SHELL = [
-    '/',
+    //'/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',

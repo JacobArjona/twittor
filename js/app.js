@@ -1,8 +1,15 @@
-// Configuracion inicial del sw:
+var url = window.location.href;
 
+var swLocation = '/twittor/sw.js';
+
+// Configuracion inicial del sw:
     if (navigator.serviceWorker) {
+
+        if (url.includes('localhost')) {
+            swLocation = '/sw.js';
+        }
         
-        navigator.serviceWorker.register('/sw.js');
+        navigator.serviceWorker.register(swLocation);
     }
 
 
